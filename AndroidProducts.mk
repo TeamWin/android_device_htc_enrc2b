@@ -15,4 +15,5 @@
 #
 
 PRODUCT_MAKEFILES := \
+    $(LOCAL_DIR)/device_enrc2b.mk \
     $(LOCAL_DIR)/omni_enrc2b.mk
