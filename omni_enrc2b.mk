@@ -35,12 +35,6 @@ PRODUCT_BRAND := Android
 PRODUCT_MODEL := One X+
 PRODUCT_MANUFACTURER := Htc
 
-# Kernel inline build
-TARGET_KERNEL_SOURCE := kernel/htc/enrc2b
-TARGET_KERNEL_CONFIG := cyanogenmod_enrc2b
-
 $(call inherit-product-if-exists, vendor/htc/enrc2b/enrc2b-vendor.mk)
-
-
 #Set build fingerprint / ID / Product Name etc.
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=enrc2b BUILD_FINGERPRINT="htc_europe/enrc2b/enrc2b:4.3/JRO03C/125529.22:user/release-keys" PRIVATE_BUILD_DESC="3.14.401.22 CL125529 release-keys"

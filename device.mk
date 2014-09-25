@@ -18,7 +18,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/recovery/twrp.fstab:recovery/root/etc/twrp.fstab
+    $(LOCAL_PATH)/recovery/twrp.fstab:recovery/root/etc/twrp.fstab \
+    $(LOCAL_PATH)/recovery/kernel:kernel
 
 # Recovery
 PRODUCT_COPY_FILES += \
